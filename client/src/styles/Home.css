@@ -1,0 +1,81 @@
+.Home {
+  height: 80vh;
+}
+
+.Home .home__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+}
+
+.Home .home__nav .nav__logo svg {
+  width: 80%;
+}
+
+.Home .home__nav .home__link {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Home .home__images .images__small {
+  width: 80%;
+  margin: 30% 0;
+}
+
+.Home .home__images .images__big {
+  width: 95%;
+  margin: 5% 0 0 0;
+  float: right;
+}
+
+.Home .home__bottomLinks {
+  position: absolute;
+  bottom: 5%;
+  left: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Home .home__bottomLinks .home__link {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.Home .home__bottomLinks .home__link:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.Home .home__bottomLinks .bottom__link {
+  padding: 0 10px;
+}
+
+.Home .home__overlayImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: 222;
+}
+
+.Home .home__overlayImage img {
+  width: 100vw;
+  height: 100vh;
+}
+/*# sourceMappingURL=Home.css.map */
