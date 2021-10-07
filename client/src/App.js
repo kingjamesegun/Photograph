@@ -1,4 +1,3 @@
-import {useEffect} from 'react';
 import './App.css';
 
 import {
@@ -6,35 +5,28 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from './Pages/Home';
-import gsap from 'gsap'
+import HomePage from './Pages/Home';
+import ProfilePage from './Pages/Profile';
+import SavePage from './Pages/Save';
+import Nav from './components/Navbar'
 
 
 function App() {
-  useEffect(()=>{
-    const tl = gsap.timeline();
-
-    tl.from(".images__small", 1.4, {
-      opacity: 0,
-      y:100,
-      delay: 1,
-      ease: "power4.out",
-      stagger: 0.3
-
-    }).from("images__big", 1.4, {
-      opacity: 0,
-      y: -100,
-      delay: 1,
-      ease: "power4.out",
-      stagger: 0.3
-    })
-  }, {})
   return (
-    <div className="app">
+    <div className="">
       <Router>
+        <Nav/>
         <Switch>
           <Route path="/" exact>
-            <Home/>
+            <HomePage/>
+          </Route>
+          
+          <Route path="/profile">
+            <ProfilePage/>
+          </Route>
+
+          <Route path="/save">
+            <SavePage/>
           </Route>
         </Switch>
       </Router>

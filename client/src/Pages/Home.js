@@ -1,44 +1,33 @@
 import React from 'react'
-import { ReactComponent as Logo} from '../assests/Logo.svg'
-import smallMama from '../assests/small mama.jpg';
-import bigMama from '../assests/bigMama.jpg';
-import Overlay from '../assests/cameraImg.jpg';
-import '../styles/Home.css'
+import '../styles/Home.css' 
+import PostCard from "../components/PostCard";
+import FollowCard from '../components/FollowCard'
+
 
 
 function Home() {
     return (
-        <div className="Home app">
-            <nav className="home__nav">
-                <div className="nav__logo">
-                    <Logo/>
+        <div className="home container body">
+            <div className="row">
+                <div className="col-lg-7 col-md-7 col-xs-12">
+                    <div style={{"marginTop" : "8%"}}>
+                        <PostCard/>
+                        <PostCard/>
+                        <PostCard/>
+                    </div>
+                    
                 </div>
-                <div className="home__link nav__link">
-                    About
-                </div>
-            </nav>
-            <div className="home__images row">
-                <div className="col-lg-5">
-                    <img className="images__small" alt="smallMama" src={smallMama}/>
-                </div>
-                <div className="col-lg-7">
-                    <img className="images__big" alt="bigMama" src={bigMama}/>
+
+                <div className="col-lg-5 col-md-5 col-xs-12">
+                    <div className="sidebar fixed" style={{"marginTop" : "3%"}}>
+                        <div style={{fontWeight: "bold", fontSize: "15px", marginBottom: "2px"}}>
+                           People
+                        </div>
+                        <FollowCard/>
+                        <FollowCard/>
+                    </div>
                 </div>
             </div>
-            <div className="home__bottomLinks">
-                <div className="home__link bottom__link">
-                    Login
-                </div>
-                <div className="home__link bottom__link">
-                    Register
-                </div>
-            </div>
-
-            {/* <div className="home__overlayImage">
-                <img className="imageOverlay" alt="overlay" src={Overlay}/>
-            </div> */}
-            
-
         </div>
     )
 }

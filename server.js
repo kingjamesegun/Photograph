@@ -8,6 +8,7 @@ const morgan = require("morgan");
 const userRoute = require("./routes/userRoutes");
 const authRoute = require("./routes/authRoutes");
 const postRoute = require("./routes/postRoutes");
+const bookingRoute = require("./routes/bookingRoutes")
 
 const PORT = 5000;
 
@@ -28,6 +29,7 @@ app.use(morgan("common"));
 app.use("/api/users", userRoute);
 app.use("/api/auths", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/booking", bookingRoute);
 
 
 // RUNNING THE APP

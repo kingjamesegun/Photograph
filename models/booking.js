@@ -6,8 +6,8 @@ const BookingScheme = new Schema({
         type: Schema.ObjectId,
         ref: "User"
     },
-    bookingStart: Date,
-    bookingEnd: Date,
+    bookingStart: String,
+    bookingEnd: String,
     startHour: Number,
     duration: Number,
     phototype: {
@@ -21,6 +21,6 @@ const BookingScheme = new Schema({
       
 }, {timestamps: true});
 
-const Post = mongoose.model("Booking", BookingScheme);
+const Booking = mongoose.model("Booking", BookingScheme);
 
-module.exports = Post;
+module.exports = Booking;
