@@ -69,6 +69,10 @@ function PostCard() {
                         </svg>
                     </div>
                 </div>
+                <div className="post__input">
+                    <input class=" border border-red-700 rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline" id="comment" type="type" placeholder="Enter comment..."/>
+
+                </div>
             </div>
             
         </div>

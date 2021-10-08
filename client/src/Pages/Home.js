@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Home.css' 
 import PostCard from "../components/PostCard";
 import FollowCard from '../components/FollowCard'
+import Footer from '../components/Footer';
 
 
 
@@ -15,17 +16,20 @@ function Home() {
                         <PostCard/>
                         <PostCard/>
                     </div>
+                    Hi
                     
                 </div>
 
                 <div className="col-lg-5 col-md-5 col-xs-12">
-                    <div className="sidebar fixed" style={{"marginTop" : "3%"}}>
+                    <div className="sidebar " >
                         <div style={{fontWeight: "bold", fontSize: "15px", marginBottom: "2px"}}>
                            People
                         </div>
                         <FollowCard/>
                         <FollowCard/>
+                        <Footer/>
                     </div>
+                    Good
                 </div>
             </div>
         </div>

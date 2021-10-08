@@ -1,6 +1,7 @@
 import React from 'react'
 import GalleryPicsCard from '../components/GalleryPicsCard'
 import ProfileCard from '../components/ProfileCard'
+import '../styles/Profile.css'
 
 function Profile() {
     return (
@@ -13,7 +14,7 @@ function Profile() {
             <div className="body">
                 <div  className="body" style={{borderTop: "1px solid rgb(194, 193, 193)", marginTop: "20px"}}>
                 </div>
-                <div className=" flex " style={{fontSize: "15px"}}>
+                <div className=" flex ffp" >
                     <p className="mr-3">
                         <span className="mr-1" style={{fontWeight: "bold"}}>20</span> 
                         posts

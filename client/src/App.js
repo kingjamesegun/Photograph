@@ -8,6 +8,7 @@ import {
 import HomePage from './Pages/Home';
 import ProfilePage from './Pages/Profile';
 import SavePage from './Pages/Save';
+import LoginPage from './Pages/Login';
 import Nav from './components/Navbar'
 
 
@@ -27,6 +28,10 @@ function App() {
 
           <Route path="/save">
             <SavePage/>
+          </Route>
+
+          <Route path="/login">
+            <LoginPage/>
           </Route>
         </Switch>
       </Router>
