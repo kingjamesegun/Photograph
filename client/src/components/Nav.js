@@ -16,10 +16,10 @@ function Nav() {
                     </Link>
                     <ul className="nav-menu">
                         <li className="nav-item">
-                            <Link to="/" className="tracking-wide block uppercase font-bold text-xs active">Post</Link>
+                            <Link to="/" className="tracking-wide block uppercase font-bold text-xs active ">Post</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/progress" className="tracking-wide block uppercase font-bold text-xs">Book</Link>
+                            <Link to="/book" className="tracking-wide block uppercase font-bold text-xs">Book</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/photographers " className="tracking-wide block uppercase font-bold text-xs">Photographers</Link>

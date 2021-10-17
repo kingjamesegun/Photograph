@@ -14,6 +14,7 @@ import ProgressProfile from './Pages/ProgressProfile';
 import ProgressProfile2 from './Pages/ProgressProfile2';
 import ProgressProfile3 from './Pages/ProgressProfile3';
 import ProgressProfile4 from './Pages/ProgressProfile4'
+import BookPage1 from './Pages/BookPage1'
 
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
 
           <Route path="/confirm">
             <ProgressProfile4/>
+          </Route>
+
+          <Route path="/book">
+            <BookPage1/>
           </Route>
         </Switch>
       </Router>
