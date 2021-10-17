@@ -9,7 +9,11 @@ import HomePage from './Pages/Home';
 import ProfilePage from './Pages/Profile';
 import SavePage from './Pages/Save';
 import LoginPage from './Pages/Login';
-import Nav from './components/Navbar'
+import Nav from './components/Nav';
+import ProgressProfile from './Pages/ProgressProfile';
+import ProgressProfile2 from './Pages/ProgressProfile2';
+import ProgressProfile3 from './Pages/ProgressProfile3';
+import ProgressProfile4 from './Pages/ProgressProfile4'
 
 
 function App() {
@@ -32,6 +36,22 @@ function App() {
 
           <Route path="/login">
             <LoginPage/>
+          </Route>
+
+          <Route path="/progress">
+            <ProgressProfile/>
+          </Route>
+
+          <Route path="/desc">
+            <ProgressProfile2/>
+          </Route>
+
+          <Route path="/socials">
+            <ProgressProfile3/>
+          </Route>
+
+          <Route path="/confirm">
+            <ProgressProfile4/>
           </Route>
         </Switch>
       </Router>

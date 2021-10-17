@@ -21,6 +21,9 @@
   .follow__details{
     margin-top: 6px;
   }
+  .footer{
+    padding-bottom: 5%;
+  }
 }
 @media(max-width: 768px){
   .follow__pics{

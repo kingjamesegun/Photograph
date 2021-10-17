@@ -2,7 +2,7 @@
   margin: 0 10%;
 }
 .body{
-  padding: 2% 15% 0 15%;
+  padding: 5% 15% 0 15%;
   font-size: 12px;
   
 }
@@ -52,14 +52,6 @@
 
 }
 /* MEDIA QUERIES  */
-@media (max-width: 480px) { 
-  .body{
-    padding: 15px 0;
-  }
-  .post{
-    border: none !important;
-  }
-}
 @media (max-width: 547px) { 
   .gallery__img{
     height: 163px !important;
@@ -68,12 +60,20 @@
 }
 @media (max-width: 768px) { 
   .body{
-    padding: 2% 10% 0 10%;
+    padding: 10% 10% 0 10%;
   }
   .profile__picture{
     height: 150px !important
   }
   
+ }
+ @media (max-width: 480px) { 
+   .body{
+     padding-top: 12%;
+   }
+   .post{
+     border: none !important;
+   }
  }
 @media (max-width: 1024px) { 
   .profile__picture{

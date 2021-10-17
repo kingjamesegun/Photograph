@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 function Home() {
     return (
         <div className="home container body">
+            {/* #C33764  #1D2671*/}
             <div className="row">
                 <div className="col-lg-7 col-md-7 col-xs-12">
                     <div style={{"marginTop" : "8%"}}>
@@ -16,7 +17,6 @@ function Home() {
                         <PostCard/>
                         <PostCard/>
                     </div>
-                    Hi
                     
                 </div>
 
@@ -29,7 +29,6 @@ function Home() {
                         <FollowCard/>
                         <Footer/>
                     </div>
-                    Good
                 </div>
             </div>
         </div>
