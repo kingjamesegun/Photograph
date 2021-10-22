@@ -40,7 +40,6 @@ const options = {
 }
 
 const swaggerDocs = swaggerJsDoc(options)
-console.log(swaggerDocs)
 
 // ROUTES
 
