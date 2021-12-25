@@ -8,10 +8,10 @@ import Footer from '../components/Footer';
 
 function Home() {
     return (
-        <div className="home container body">
+        <div className="home  body">
             {/* #C33764  #1D2671*/}
             <div className="row">
-                <div className="col-lg-7 col-md-7 col-xs-12">
+                <div className="col-lg-8 col-md-7 col-xs-12">
                     <div style={{"marginTop" : "8%"}}>
                         <PostCard/>
                         <PostCard/>
@@ -20,7 +20,7 @@ function Home() {
                     
                 </div>
 
-                <div className="col-lg-5 col-md-5 col-xs-12">
+                <div className="col-lg-4 col-md-5 col-xs-12">
                     <div className="sidebar " >
                         <div style={{fontWeight: "bold", fontSize: "15px", marginBottom: "2px"}}>
                            People
