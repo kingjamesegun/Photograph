@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.stroke{
+  text-stroke: 2px black
+}
