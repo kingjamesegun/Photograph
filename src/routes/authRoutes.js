@@ -4,12 +4,38 @@ const router = express.Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
+// SWAGGER CONFIGURATION
+/**
+ * @swagger
+ * 
+ * /api/auths/register:
+ *  post:
+ *      produces:
+ *          - application/json
+ *      parameters:
+ *          - name: username
+ *            in: formData
+ *            required: true
+ *            type: string
+ *          - name: email
+ *            in: formData
+ *            required: true
+ *            type: string
+ *          - name: password
+ *            in: formData
+ *            required: true
+ *            type: string
+ *      responses:
+ *          200:
+ *              description: Success
+ * 
+ */
+
 // REGISTER
 router.post("/register", async (req, res)=>{
     try{
         // generate password
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+        const hashedPassword = await bcrypt.hashSync(req.body.password, 10);
 
         // genertae new user
         const newUser = new User({
@@ -19,8 +45,12 @@ router.post("/register", async (req, res)=>{
         })
 
         // saving to db
-        const user = await newUser.save();
-        res.status(200).json(user);
+        const { username, email } = await newUser.save();
+        res.status(200).json({
+            message: "Your account has been created successfully",
+            username,
+            email
+        });
     }catch(err){
         console.log(err);
     }
